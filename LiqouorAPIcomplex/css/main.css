@@ -1,0 +1,36 @@
+body{
+  background-image: url("http://c3.thejournal.ie/media/2017/09/public-health-alcohol-bill-2-752x501.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input{
+  width: 50%;
+  height: 80px;
+  color: green;
+  font-size: 45px;
+  margin-left: 15%;
+}
+p{
+  color: green;
+  font-size: 2em;
+  width: 80%;
+  text-align: center;
+  margin-left: 9%;
+  background-color: white;
+}
+button{
+  width: 20%;
+  height: 60px;
+  font-size: 30px;
+  color: green;
+  background-color: black;
+}
+ul{
+  color: white;
+  font-size: 15px;
+  margin-left: 20%;
+  border: 1px solid red;
+  width: 300px;
+  background: black;
+  float: left;
+}

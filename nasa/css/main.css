@@ -1,0 +1,50 @@
+body{
+  background-image: url("https://c.o0bg.com/rf/image_960w/Boston/2011-2020/2018/07/02/BostonGlobe.com/Business/Images/AdobeStock_190259440.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* <---Title---> */
+h1{
+  color: black;
+  text-align: center;
+  font-size: 60px;
+  
+  outline-color: silver;
+
+}
+/* ,--End Title--> */
+/* ,---Choose Date---> */
+
+span{
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  margin-left: 35%;
+}
+input{
+  display: block;
+  color: silver;
+  background-color: black;
+  font-size: 40px;
+  margin-left: 33%;
+
+}
+/* <--End Choose Date--> */
+/* <---Results---> */
+img{
+  width: 70%;
+  margin-left: 15%;
+  height: 300px;
+}
+iframe{
+  width: 70%;
+  height: 300px;
+  margin-left: 15%;
+}
+p{
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+}
+/* <--End Results-- */

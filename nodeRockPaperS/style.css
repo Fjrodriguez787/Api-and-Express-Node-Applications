@@ -1,0 +1,33 @@
+h1{
+  text-align: center;
+  color: red;
+  font-size: 35px;
+}
+h2{
+  text-align: center;
+}
+p{
+  text-align: center;
+  color: black;
+  font-size: 25px;
+}
+.cont{
+  background-image: url("http://www.sfvacc.org/resources/Pictures/RoPaSc%20Logo.jpg");
+  background-size: contain;
+}
+#rock, #paper{
+  border: 1px solid black;
+  background: white;
+  width: 70px;
+  color: blue;
+  font-size: 30px;
+  margin-left: 47%;
+}
+#scissors{
+  border: 1px solid black;
+  background: white;
+  width: 100px;
+  color: blue;
+  font-size: 30px;
+  margin-left: 47%;
+}

@@ -1,0 +1,79 @@
+body{
+  background-image: url("http://i.imgur.com/ro5bn3v.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+  /* padding-top: 50px; */
+}
+header{
+  max-height: 160px;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 40px;
+}
+header img{
+  height:100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+section{
+  /* border: 4px dotted lightpink; */
+  /* background-color: #aecfc8; */
+  opacity: .9;
+}
+
+label{
+  font-size: 25px;
+}
+input{
+  margin-top: 28px;
+  padding: 8px;
+  width: 30%;
+  margin-left: 10px;
+  height: 40px;
+}
+/* .leftBar h4{
+  margin-top: 200px;
+  clear: both;
+  font-size: 25px;
+} */
+/* .rightBody{
+  height: 100vh;
+  float: right;
+  width: 70%;
+  text-align: center;
+  color: black;
+
+  background-color: blue;
+}
+.rightBody h2{
+  font-size: 20px;
+}
+.rightBody h3{
+  font-size: 25px;
+} */
+button{
+  width: 40px;
+  height: 58px;
+  background-color: transparent;
+  width: 25%;
+  border: 1px solid red;
+}
+button img{
+  width: 20px;
+  height: 20px;
+}
+.error{
+  color: #CC0000;
+  font-size: 18px;
+}
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+  .leftBar, .rightBody {
+  width: 100%;
+  }
+}

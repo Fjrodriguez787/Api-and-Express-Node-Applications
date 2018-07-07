@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <section class="rock">
+      <h1>Rock Paper Scissors.... Shoot!<i class="fas fa-hand-peace"></i></h1>
+      <div class="box">
+    	<p id="score1">Your Score</p>
+    	<p id="yourScore" class="score">
+      </div>
+    </section>
+
+
+  <h1 id="vs">VS.</h1>
+  <div class="box" id="box2">
+  	<p id="score2">Computer Score</p>
+  	<p id="comScore" class="score">
+  </div>
+  <hr />
+
+  <div class="cont">
+    <h2>Select One</h2>
+  	<p id="rock" class="tool" onclick="rock()">Rock</p>
+  	<p id="paper" class="tool" onclick="paper()">Paper</p>
+  	<p id="scissors" class="tool" onclick="scissors()">Scissors</p>
+  </div>
+
+  <hr />
+  <h1 style="text-align: center">Last result was a:</h1>
+  <p id="result"></p>
+
+    <script type="text/javascript" >
+
+    var comScore = document.getElementById("comScore");
+    var yourScore = document.getElementById("yourScore");
+    var result = document.getElementById("result");
+    var replay = document.getElementById("replay");
+    var overlay = document.getElementById("overlay");
+    var answer = document.getElementById("answer");
+    var yScore = 0;
+    var cScore = 0;
+    var rock = function() {
+    var comPick = Math.random();
+    if (comPick <= 0.34) {
+      comPick = "Rock";
+    } else if (comPick <= 0.67) {
+      comPick = "Paper";
+    } else {
+      comPick = "Scissors";
+    };
+    if (comPick === "Rock") {
+      result.innerHTML = "Draw";
+    } else if (comPick === "Paper") {
+      result.innerHTML = "Loss";
+      yScore -= 1;
+      cScore += 1;
+    } else {
+      result.innerHTML = "Win";
+      cScore -= 1;
+      yScore += 1;
+    }
+    comScore.innerHTML = cScore;
+    yourScore.innerHTML = yScore;
+    if (yScore >= 5) {
+      overlay.style.display = "block";
+      answer.innerHTML = "You Win!";
+    } else if (cScore >= 5) {
+      overlay.style.display = "block";
+      answer.innerHTML = "Looks like the engine wins...";
+    }
+    };
+
+    var paper = function() {
+    var comPick = Math.random();
+    if (comPick <= 0.34) {
+      comPick = "Rock";
+    } else if (comPick <= 0.67) {
+      comPick = "Paper";
+    } else {
+      comPick = "Scissors";
+    };
+    if (comPick === "Rock") {
+      result.innerHTML = "Win";
+      cScore -= 1;
+      yScore += 1;
+
+    } else if (comPick === "Scissors") {
+      result.innerHTML = "Draw";
+      cScore -= 0;
+      yScore += 0;
+    } else {
+      result.innerHTML = "Loss";
+      yScore -= 1;
+      cScore += 1;
+    }
+    comScore.innerHTML = cScore;
+    yourScore.innerHTML = yScore;
+    if (yScore >= 5) {
+      overlay.style.display = "block";
+      answer.innerHTML = "You Win!";
+    } else if (cScore >= 5) {
+      overlay.style.display = "block";
+      answer.innerHTML = "Looks like the engine wins...";
+    }
+  };
+
+var scissors = function() {
+var comPick = Math.random();
+if (comPick <= 0.34) {
+  comPick = "Rock";
+} else if (comPick <= 0.67) {
+  comPick = "Paper";
+} else {
+  comPick = "Scissors";
+};
+if (comPick === "Scissors") {
+  result.innerHTML = "Draw";
+} else if (comPick === "Rock") {
+  result.innerHTML = "Loss";
+  yScore -= 1;
+  cScore += 1;
+} else {
+  result.innerHTML = "Win";
+  cScore -= 1;
+  yScore += 1;
+}
+comScore.innerHTML = cScore;
+yourScore.innerHTML = yScore;
+
+if (yScore >= 5) {
+  overlay.style.display = "block";
+  answer.innerHTML = "You Win!";
+} else if (cScore >= 5) {
+  overlay.style.display = "block";
+  answer.innerHTML = "Looks like the engine wins...";
+}
+};
+var replay = function() {
+yScore = 0;
+cScore = 0;
+comScore.innerHTML = cScore;
+yourScore.innerHTML = yScore;
+overlay.style.display = "none";
+};
+if (yScore >= 5) {
+overlay.style.display = "block";
+answer.innerHTML = "You Win!";
+} else if (cScore >= 5) {
+overlay.style.display = "block";
+answer.innerHTML = "Looks like the engine wins...";
+};
+
+    </script>
+  </body>
+</html>

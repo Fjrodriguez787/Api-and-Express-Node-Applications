@@ -1,0 +1,19 @@
+body{
+  background-image: url('https://images.unsplash.com/photo-1447433693259-c8549e937d62?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=523c8f832f907b466746b69cdec4541b&w=1000&q=80');
+}
+h1{
+  color: gray;
+  text-align: center;
+}
+input{
+  margin-left: 44%;
+  display: inline-block;
+}
+div{
+  margin-left: 35%;
+}
+img{
+  width: 400px;
+  height: 300px;
+
+}

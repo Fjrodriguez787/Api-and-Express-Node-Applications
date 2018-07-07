@@ -1,0 +1,37 @@
+body{
+  font-family: helvetica;
+  font-size: 20px;
+  background-image: url("https://thumbs.dreamstime.com/b/thermometer-green-nature-background-temperature-measuring-environment-concept-96357504.jpg");
+  background-size: cover;
+  background-position: center;
+}
+h1{
+  font-size: 2.5rem;
+  text-align: center;
+  color: #4170f2;
+  margin: 5%;
+}
+#nasaLogo{
+  width: 200px;
+  height :150px;
+}
+section{
+  width: 60%;
+  height: 400px;
+  overflow: scroll;
+  margin:auto;
+  background-color: white;
+  border: 5px solid #4170f2;
+}
+
+ol li{
+  padding-bottom: 2%;
+}
+.color{
+  color: #4170f2;
+}
+@media only screen and (max-width: 768px) {
+  h1, img, .list {
+  width: 100%;
+  }
+}

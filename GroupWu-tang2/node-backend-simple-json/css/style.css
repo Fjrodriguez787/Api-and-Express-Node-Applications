@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("http://olddirtydermot.com/wp-content/uploads/2016/08/Wu-Tang-MTV-vector-Logo-Design-Old-Dirty-Dermot-BK-NY.jpg");
+  background-repeat: no-repeat;
+}
+.n1, .n2, .n3, .n4, .n5{
+  display: block;
+}
+h1{
+  color: yellow;
+}
+h2{
+  color: white;
+}
+button{
+  display: block;
+}
+/* #wu{
+  margin-left: ;
+} */
